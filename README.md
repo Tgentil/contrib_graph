@@ -2,10 +2,9 @@
 
 Este projeto fornece uma ferramenta para simular o quadro de contribuições do GitHub, utilizando a biblioteca `matplotlib` para visualização.
 
-
 ![Quadro de Contribuições do GitHub](graph.png)
 
-
+![Quadro de Contribuições do GitHub (vazio)](empty_graph.png)
 
 ## Descrição
 
