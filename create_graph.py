@@ -20,7 +20,7 @@ def plot_github_style(matrix):
     # Desenhando cada quadrado
     for y in range(matrix.shape[0]):
         for x in range(matrix.shape[1]):
-            color = "#eeeeee" if matrix[y, x] == 1 else "green"
+            color = "green" if matrix[y, x] == 1 else "#eeeeee"
             rect = plt.Rectangle((x*1.2, y*1.2), 1, 1, facecolor=color, edgecolor="gray")
             ax.add_patch(rect)
 
