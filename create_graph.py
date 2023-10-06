@@ -17,12 +17,10 @@ def plot_github_style(matrix):
     """
     ax = plt.subplots(figsize=(13, 7))[1]
 
-
     # Desenhando cada quadrado
     for y in range(matrix.shape[0]):
         for x in range(matrix.shape[1]):
             color = "#eeeeee" if matrix[y, x] == 1 else "green"
-
             rect = plt.Rectangle((x*1.2, y*1.2), 1, 1, facecolor=color, edgecolor="gray")
             ax.add_patch(rect)
 
@@ -35,12 +33,13 @@ def plot_github_style(matrix):
     plt.title("Quadro de Contribuições do GitHub")
     plt.show()
 
-# Definindo o tamanho da matriz
-ALTURA = 7
-LARGURA = 52
+if __name__ == '__main__':
+    # Definindo o tamanho da matriz
+    ALTURA = 7
+    LARGURA = 52
 
-# Criando uma matriz 7x52 preenchida com 1s (representando commits)
-matriz = np.ones((ALTURA, LARGURA))
+    # Criando uma matriz 7x52 preenchida com 1s (representando commits)
+    matriz = np.ones((ALTURA, LARGURA))
 
-# Chamando a função para visualizar o quadro
-plot_github_style(matriz)
+    # Chamando a função para visualizar o quadro
+    plot_github_style(matriz)
